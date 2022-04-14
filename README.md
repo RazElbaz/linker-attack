@@ -27,7 +27,18 @@ We wrote the secret.c code in which we replaced the original scanf code and repl
 
 
 ##  Run:
-
+1. make attack
+2. make secret
+3. make 
+4. From another terminal run run_server
+5. From a different terminal from the server terminal: readelf  -a secret | less 
+   explain: For find the digger and the dynamic library in the dynamic section to know where they are and what their offset is 
+6.   From another terminal run hexedit ./secret
+    explain: Change their offset
+7. We moved the libc.so.6 pointer from 1 to 5 to increase the 4-character pointer to leave only .so.6
+8. Type in the terminal again readelf -a secret | less to see the changes
+9. make run_secret
+10. You can see the password that the user entered is printed on our server
 
 ## Pictures from the run:
 
