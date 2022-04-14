@@ -8,7 +8,9 @@ C
 1. the hacked binary and libs
 
 2. any extra sourcecode
+
 a) hacked library
+
 b) any extra server used - for example to receive the password
 
 3. at least one screen shot of how it works
