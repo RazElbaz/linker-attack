@@ -9,9 +9,9 @@ C
 
 2. any extra sourcecode
 
-a) hacked library
+    a) hacked library
 
-b) any extra server used - for example to receive the password
+    b) any extra server used - for example to receive the password
 
 3. at least one screen shot of how it works
 
