@@ -1,8 +1,6 @@
 # linker-attack
 Attack scanf in the following code to steal the password the user entered and send it to remote server
 
-# Writing language:
-C
 
 # Introduction:
 We wrote the secret.c code in which we replaced the original scanf code and replaced it with our scanf code in order to steal the password that the user enters and print it on the TCP server we created with the address 127.0.0.1 (localhost).
@@ -29,7 +27,7 @@ We wrote the secret.c code in which we replaced the original scanf code and repl
 ##  Run:
 1. make attack
 2. make secret
-3. make 
+3. make server
 4. From another terminal run run_server
 5. From a different terminal from the server terminal: readelf  -a secret | less 
    explain: For find the digger and the dynamic library in the dynamic section to know where they are and what their offset is 
@@ -41,4 +39,43 @@ We wrote the secret.c code in which we replaced the original scanf code and repl
 10. You can see the password that the user entered is printed on our server
 
 ## Pictures from the run:
+
+1. make attack:
+ 
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/make_attack.png)
+
+2. make secret:
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/make_secret.png)
+
+3. make server:
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/make_server.png)
+
+4. run run_server:
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/run_server.png)
+
+5. readelf  -a secret | less :
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/find_bit.png)
+
+6. run hexedit ./secret: 
+
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/befor.png)
+
+7. Change their offset:
+
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/after.png)
+
+8. Type in the terminal again readelf -a secret | less to see the changes
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/readelf_result.png)
+
+9+10.   make run_secret and see the password that the user entered is printed on our server:
+
+![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/end.png)
+
 
