@@ -60,7 +60,7 @@ We wrote the secret.c code in which we replaced the original scanf code and repl
 
 ![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/find_bit.png)
 
-6. run hexedit ./secret: 
+6. run ```hexedit ./secret```
 
 
 ![alt text](https://github.com/RazElbaz/linker-attack/blob/main/Pictures%20from%20the%20run/befor.png)
