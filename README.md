@@ -5,6 +5,10 @@ Attack scanf in the following code to steal the password the user entered and se
 C
 
 # Introduction:
+We wrote the secret.c code in which we replaced the original scanf code and replaced it with our scanf code in order to steal the password that the user enters and print it on the TCP server we created with the address 127.0.0.1 (localhost).
+
+
+## Tasks:
 1. the hacked binary and libs
 
 2. any extra sourcecode
